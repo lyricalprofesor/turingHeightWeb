@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Orbit&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./tailwind.config.js"></script>
-  <link rel="stylesheet" href="https:fonts.googleapis.com/css2?family=orbitron:wght@400;600;700&display=swap">
-  <style>
-    .font-orbitron {
-      font-family: 'orbitron', sans-serif;
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            orbitron: ['Orbitron', 'sans-serif'],
+            orbit: ['Orbit', 'sans-serif'],
+          },
+          colors: {
+            vampireblack: '#030000',
+            blackbean: '#340000',
+            bloodred: '#730000',
+            red: '#FF0000',
+            vividorange: '#FF6200',
+            linen: '#FFEBEB',
+          }
+        }
+      }
     }
-  </style>
-  <title>Turing Heights</title>
+  </script>
+  <script src="./tailwind.config.js"></script>
+  
+  <title>service</title>
 </head>
-<body class="bg-white text-gray-900">
+<body class="">
   <!-- Hero Section -->
   <div class="bg-[url('./pics/backg.jpeg')] bg-cover bg-center min-h-screen relative">
-   <div class="bg-black bg-opacity-50 absolute inset-0"></div>
-   <header class="relative z-10 text-white px-4 py-6 md:px-10">
+   <div class="bg-vampireblack bg-opacity-50 absolute inset-0"></div>
+   <header class="relative z-10 text-linen px-4 py-6 md:px-10">
     <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap">
       <!-- Logo + Hamburger -->
-      <div class="flex font-orbitron items-center justify-between w-full md:w-auto">
-        <h1 class="text-lg font-bold">⛰ Turing Heights</h1>
+      <div class=" flex  items-center justify-between w-full md:w-auto">
+        <a href="./index.html" class="flex items-center " > <img class="w-32 h-32 " src="./DP5.svg" alt="Hero icon"> <h1 class="text-2xl font-orbitron font-bold text-red">  Turing Heights</h1> </a>
         <button class="md:hidden" id="hamburger">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -32,16 +48,16 @@
   
       <!-- Navigation Menu -->
       <div id="navigationMenu"
-        class="w-full mt-4 md:mt-0 md:flex md:items-center md:gap-6 md:w-auto hidden">
+        class="w-full font-orbitron mt-4 md:mt-0 md:flex md:items-center md:gap-6 md:w-auto hidden">
         
-        <div class="flex flex-col md:flex-row gap-4 text-lg">
-          <a href="./index.html" class="hover:text-orange-300">Home</a>
-          <a href="./service.html" class="hover:text-orange-300">Service</a>
-          <a href="./about.html" class="hover:text-orange-300">About</a>
-          <a href="./contact.html" class="hover:text-orange-300">Contact</a>
+        <div class=" text-linen flex flex-col md:flex-row gap-4 text-lg">
+          <a href="./index.html" class=" nav-link hover:text-red transition">Home</a>
+          <a href="./service.html" class="nav-link hover:text-red transition">Service</a>
+          <a href="./about.html" class="nav-link transition hover:text-red">About</a>
+          <a href="./contact.html" class="nav-link transition hover:text-red">Contact</a>
         </div>
   
-        <button class="mt-4 md:mt-0 md:ml-6 px-4 py-2 bg-orange-300 text-black font-semibold rounded-md">
+        <button class="mt-4 md:mt-0 md:ml-6 px-4 py-2 bg-vividorange text-linen font-semibold rounded-md">
           Get a Quote
         </button>
       </div>
@@ -51,12 +67,11 @@
     
    
     <div class="  relative z-10 px-4 py-12 text-white text-center md:text-left md:px-10">
-      <h1 class="text-3xl md:text-5xl lg:text-7xl font-orbitron font-bold leading-tight">
+      <h1 class="text-3xl md:text-5xl lg:text-7xl font-orbitron font-bold leading-tight ">
         Services
       </h1>
-      <p class="mt-6 text-lg md:text-2xl max-w-2xl mx-auto md:mx-0 font-orbitron">
-        If you're looking for a digital agency to help create a remarkable presence online,
-        you've come to the right place. We can help you take your business to the next level.
+      <p class="mt-6 font-orbit text-lg md:text-2xl max-w-2xl mx-auto md:mx-0 ">
+        When connected with us, you are not growing your business alone. we have your back and put in our best to contribute to the growth of your entire team and organisation.
       </p>
 
       
@@ -65,114 +80,114 @@
 
  <!--Hire section-->
    
- <section class=" font-orbitron bg-orange-50 py-16 ">
+ <section class="  bg-linen py-16 ">
   <div class="max-w-screen-xl mx-auto px-4">
 
    <div class="text-center my-2"> 
-    <h2 class="text-4xl font-orbitron font-bold  mb-12">How Can We Help You?</h2>
-    <p class="text-2xl font-orbitron"> lorem ipsum A digital agency to help create a remarkable presence online.A digital agency to help create a remarkable presence online. </p>
-    <button class="text-white bg-gray-700  p-2 border rounded-md hover:bg-blue-700 my-4 font-orbitron" >Book Now</button>
+    <h2 class="text-4xl font-orbitron text-vampireblack font-bold  mb-12">How Can We Help You?</h2>
+    <p class="text-2xl text-vampireblack font-orbit "> From Creative Designs, Research and Development to Branding and Marketing, we've got you covered. Click on the button below to get what's best for you! </p>
+    <button class="text-white bg-blackbean  p-2 border rounded-md hover:bg-vividorange my-4 font-orbitron" >Book Now</button>
     </div>
 
     <!-- ServiceGrid -->
-    <div class="grid md:grid-cols-3 gap-8 text-center text-xl">
+    <div class=" grid md:grid-cols-3 gap-8 text-center text-xl">
       <!-- Card -->
       <div class=" bg-white p-6 rounded-3xl shadow hover:shadow-lg transition duration-300">
-        <div class="flex justify-center mb-4 text-yellow-950">
+        <div class="flex justify-center mb-4 text-blackbean">
           <!-- Icon -->
           <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
             </svg>
         </div>
-        <h3 class="font-bold text-2xl mb-2">Design</h3>
-        <p class="text-gray-600">A digital agency to help create a remarkable presence online.</p>
+        <h3 class="font-bold font-orbitron text-vampireblack text-2xl mb-2">Design</h3>
+        <p class="text-vampireblack font-orbit">A digital agency to help create a remarkable presence online.</p>
       </div>
 
      
       <div class=" bg-white p-6 rounded-3xl shadow hover:shadow-lg transition duration-300">
-        <div class="flex justify-center mb-4 text-yellow-950">
+        <div class="flex justify-center mb-4 text-blackbean">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
               d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
           </svg>
         </div>
-        <h3 class="font-bold text-2xl mb-2">Development</h3>
-        <p class="text-gray-600">A digital agency to help create a remarkable presence online..</p>
+        <h3 class="font-bold font-orbitron text-vampireblack text-2xl mb-2">Development</h3>
+        <p class="text-vampireblack font-orbit">Our team will develop and deliver a website that will seve your purpose.</p>
       </div>
 
       <div class=" bg-white p-6 rounded-3xl shadow hover:shadow-lg transition duration-300">
-        <div class="flex justify-center mb-4 text-yellow-950">
+        <div class="flex justify-center mb-4 text-blackbean">
           <svg class="w-12 h12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46" />
             </svg>
         </div>
-        <h3 class="font-bold text-2xl mb-2">Marketing</h3>
-        <p class="text-gray-600">A digital agency to help create a remarkable presence online..</p>
+        <h3 class="font-bold font-orbitron text-vampireblack text-2xl mb-2">Marketing</h3>
+        <p class="text-gray-600 font-orbit text-vampireblack">We will ensure that new customers are able to find your business</p>
       </div>
 
       <!-- Social Media -->
       <div class=" bg-white p-6 rounded-3xl shadow hover:shadow-lg transition duration-300">
-        <div class="flex justify-center mb-4 text-yellow-950">
+        <div class="flex justify-center mb-4 text-blackbean">
           <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
             </svg>
             
         </div>
-        <h3 class="font-bold text-2xl mb-2">Social Media</h3>
-        <p class="text-gray-600">Engage and grow your audience across all platforms.</p>
+        <h3 class="font-bold font-orbitron text-vampireblack text-2xl mb-2">Social Media</h3>
+        <p class="text-vampireblack font-orbit">Engage and grow your audience across all platforms.</p>
       </div>
 
       <!-- eCommerce -->
       <div class=" bg-white p-6 rounded-3xl shadow hover:shadow-lg transition duration-300">
-        <div class="flex justify-center mb-4 text-yellow-950">
+        <div class="flex justify-center mb-4 text-blackbean">
           <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3" />
             </svg>
         </div>
-        <h3 class="font-bold text-2xl mb-2">eCommerce</h3>
-        <p class="text-gray-600">A digital agency to help create a remarkable presence online.</p>
+        <h3 class="font-bold font-orbitron text-vampireblack text-2xl mb-2">eCommerce</h3>
+        <p class="text-vampireblack font-orbit">A digital agency to help create a remarkable presence online.</p>
       </div>
 
       <!-- Help & Support -->
       <div class=" bg-white p-6 rounded-3xl shadow hover:shadow-lg transition duration-300">
-        <div class="flex justify-center mb-4 text-yellow-950">
+        <div class="flex justify-center mb-4 text-blackbean">
           <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
             </svg>
         </div>
-        <h3 class="font-bold text-2xl mb-2">Help & Support</h3>
-        <p class="text-gray-600">Reliable support to keep your digital systems running smoothly.</p>
+        <h3 class="font-bold font-orbitron text-vampireblack text-2xl mb-2">Help & Support</h3>
+        <p class="text-vampireblack font-orbit">Reliable support to keep your digital systems running smoothly.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Clients Section -->
-<section class=" bg-white py-16 px-4">
-  <p class="text-3xl font-bold font-orbitron text-center mb-8">Our Customers</p>
-  <p class="text-2xl text-center font-orbitron pb-16 my-10" >lorem ipsum dolor sit amet, consecuteur adipscising elit, suspendise et justo. praescent msttis commodo augue.</p>
+<section class=" bg-linen py-16 px-4">
+  <p class="text-3xl font-bold font-orbitron text-center mb-10 text-blackbean">Our Customers</p>
+  <p class="text-center text-vampireblack font-orbit mb-5 text-2xl">With us you'll feel heard, we listen to our clients requirements and then select the right solution.</p>
 
-  <div class="flex flex-row justify-center gap-48">
-    <p class="text-2xl font-orbitron text-gray-700 hover:text-black flex items-center gap-2">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+    <p class="text-xl font-orbit text-blackbean flex items-center gap-2 justify-center">
       <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25Z" />
       </svg>
       Logo Ipsum
     </p>
     
-    <p class="text-2xl font-orbitron text-gray-700 hover:text-black flex items-center gap-2">
+    <p class="text-xl font-orbit text-blackbean flex items-center gap-2 justify-center">
       <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25Z" />
       </svg>
       Logo Ipsum
     </p>
-    <p class="text-2xl font-orbitron text-gray-700 hover:text-black flex items-center gap-2">
+    <p class="text-xl text-blackbean flex items-center gap-2 justify-center">
       <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25Z" />
       </svg>
       Logo Ipsum
     </p>
-    <p class="text-2xl font-orbitron text-gray-700 hover:text-black flex items-center gap-2">
+    <p class="text-xl font-orbit text-blackbean flex items-center gap-2 justify-center">
       <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25Z" />
       </svg>
@@ -181,60 +196,61 @@
   </div>
 </section>
 
+
 <!--amaze design-->
-<section class="font-orbitron bg-orange-50 py-16 px-4 text-center">
+<section class=" bg-linen py-16 px-4 text-center">
   
-  <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+  <h2 class="text-3xl md:text-4xl font-bold font-orbitron text-bloodred mb-4">
     "Amazing designs and quality work"
   </h2>
 
   
-  <p class="text-black text-2xl max-w-xl mx-auto mb-8">
+  <p class="text-vampireblack font-orbit text-2xl max-w-xl mx-auto mb-8">
      Beautiful digital experiences with, creativity and quality. 
   </p>
 
   <!-- Info -->
   <div class=" flex flex-col items-center">
     <img src="./pics/codex.jpg" alt=" photo" class="rounded-full w-30 h-30 mb-4">
-    <p class="text-lg font-semibold text-black">John Doe</p>
-    <p class=" text-black"> Director</p>
+    <p class="text-lg font-semibold font-orbit text-vampireblack">John Doe</p>
+    <p class=" text-vampireblack font-orbitron"> Director</p>
   </div>
 </section>
 
 
-<section class=" bg-orange-50 py-16 px-4 text-center font-orbitron">
-  <div class="rounded-lg shadow shadow-gray-400 py-10">
-  <h2 class="text-3xl md:text-4xl font-bold  text-black mb-10">
+<section class=" bg-linen py-16 px-4 text-center font-orbitron">
+  <div class="rounded-lg shadow shadow-vampireblack  py-10">
+  <h2 class="text-3xl md:text-4xl font-bold font-orbitron  text-vampireblack mb-10">
     Would you like to start a project with us?
   </h2>
-  <p class="text-lg   px-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam blanditiis ipsam voluptas commodi ullam beatae ipsa accusantium non dignissimos modi, amet fuga pariatur enim, autem et, neque ea obcaecati quisquam?</p>
-  <button class="bg-gray-600 text-white border rounded-lg px-5 py-3 hover:bg-blue-700">090-00-00-00-00</button>
+  <p class="text-lg text-vampireblack font-orbit   px-16">We love what we do and therfore come up with the best possible solutions to help you set and grow online quickly. We are your trusted partners</p>
+  <button class="bg-blackbean text-linen border rounded-lg px-5 py-3 hover:bg-vividorange font-orbitron font-black">090-0000-0000</button>
 </div>
   </section>
 <!--news-->
 
 
-<section class=" bg-orange-100 font-orbitron text-black py-10 px-4">
+<section class=" bg-vampireblack   py-10 px-4">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
     <!-- Logo -->
-    <div class="text-lg font-bold text-black">
-      Turing heights⛰
+    <div class="text-lg font-bold text-red">
+      <a href="./index.html" class="flex items-center " > <img class="w-24 h-24 " src="./DP5.svg" alt="Hero icon"> <h1 class="text-2xl font-orbitron font-bold">  Turing Heights</h1> </a>
     </div>
 
     <!-- Nav -->
-    <nav class="flex gap-6 text-sm font-medium">
-      <a href="./index.html" class=" text-lg text-white hover:text-orange-300  transition">Home</a>
-      <a href="./service.html" class="text-lg hover:text-orange-300 transition">Services</a>
-      <a href="./about.html" class="text-lg hover:text-orange-300 transition">About</a>
-      <a href="./contact.html" class="text-lg hover:text-orange-300 transition">Contact</a>
+    <nav class="flex gap-6 text-linen text-sm font-medium">
+      <a href="./index.html" class="nav-link font-orbitron  transition">Home</a>
+      <a href="./service.html" class="nav-link  font-orbitron transition">Services</a>
+      <a href="./about.html" class="nav-link  font-orbitron transition">About</a>
+      <a href="./contact.html" class="nav-link  font-orbitron transition">Contact</a>
     </nav>
   </div>
  
 </section>
 
 <hr class="">
-<footer class=" font-orbitron bg-orange-100 text-black text-sm text-center py-6">
- Copyright © 2025 Turing heights Agency | Powered by Turing heights A gency
+<footer class=" bg-vampireblack text-linen font-orbit text-sm text-center py-6">
+ Copyright © 2025 Turing Heights Agency | Powered by Turing Heights Agency
 </footer>
 
 

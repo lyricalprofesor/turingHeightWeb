@@ -44,3 +44,22 @@
   counters.forEach(counter => {
     observer.observe(counter);
   });
+
+  //for active nav
+  document.addEventListener('DOMContentLoaded', () => {
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      const linkhref = link.getAttribute('href').split("/").pop();
+      if (linkhref === currentPage) {
+        link.classList.add(
+          'text-linen',
+          'font-bold',
+          'border-b-2',
+          'border-red',
+        
+        );
+      }
+    });
+  });
