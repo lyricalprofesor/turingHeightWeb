@@ -1,0 +1,36 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_437_1377)">
+<path d="M441.695 371.762H368.298V708.194H441.695V371.762Z" fill="#FF0000"/>
+<path d="M515.086 708.191H441.689V771.053H515.086V708.191Z" fill="#FF0000"/>
+<path d="M441.746 708.13L368.411 708.13L441.746 770.99L441.746 708.13Z" fill="#FF0000"/>
+<path d="M588.492 708.156H661.889V371.724H588.492V708.156Z" fill="#FF0000"/>
+<path d="M515.102 371.725H588.499V308.863H515.102V371.725Z" fill="#FF0000"/>
+<path d="M588.457 371.788L661.792 371.788L588.457 308.928L588.457 371.788Z" fill="#FF0000"/>
+<path d="M277 501.348L277 574.745L738.804 574.745L738.804 501.348L277 501.348Z" fill="#FF0000"/>
+<path d="M738.812 427.951L738.812 501.348L801.674 501.348L801.674 427.951L738.812 427.951Z" fill="#FF0000"/>
+<path d="M738.729 501.299L738.729 574.634L801.59 501.299L738.729 501.299Z" fill="#FF0000"/>
+<mask id="mask0_437_1377" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="565" y="216" width="120" height="200">
+<rect x="565.906" y="216.85" width="118.302" height="198.507" fill="#380000"/>
+</mask>
+<g mask="url(#mask0_437_1377)">
+<path d="M588.32 371.264L661.792 371.886V434.773H588.32V371.264Z" fill="#750000" fill-opacity="0.65"/>
+</g>
+<mask id="mask1_437_1377" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="345" y="663" width="119" height="200">
+<rect width="118.302" height="198.507" transform="matrix(1 0 0 -1 345.484 862.412)" fill="#380000"/>
+</mask>
+<g mask="url(#mask1_437_1377)">
+<path d="M368.281 708.113L441.688 708.143V644.487H368.281V708.113Z" fill="#750000" fill-opacity="0.65"/>
+</g>
+<mask id="mask2_437_1377" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="694" y="478" width="199" height="119">
+<rect width="118.302" height="198.507" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 892.68 596.66)" fill="#380000"/>
+</mask>
+<g mask="url(#mask2_437_1377)">
+<path d="M738.805 574.738L738.737 501.303L674.755 501.303L674.755 574.738L738.805 574.738Z" fill="#750000" fill-opacity="0.65"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_437_1377">
+<rect width="524.264" height="462" fill="white" transform="translate(277 309)"/>
+</clipPath>
+</defs>
+</svg>
